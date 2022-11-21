@@ -1,0 +1,14 @@
+HOW TO CRAWL A WEBSITE
+	To crawl a website basically means to extract data from a website. One can extract text, images , tables etc., from a website. This extracted data can be used for various daily life purposes including price prediction, market analysis and so on.
+There are 3 ways to crawl a website:
+1.	Using Crawler tools
+There are some ready-to-use crawler tools which can be used. These tools are non-technical. Person without much of a coding background can easily operate such tools. Such tools can be listed as ScrapeBox, Google Web Scraper Plugin etc. But there is a lack of customization options here. 
+2.	Use website API’s
+An API enables companies to open up their applications’ data and functionality to external third-party developers, business partners, and internal departments within their companies. It allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. But not all websites use API’s.
+3.	Build a Web Crawler
+To deal with the above limitations, we can build our own web crawler. BeautifulSoup library in python is the easier way to do this. BeautifulSoup does not fetch the web page for us. That’s why I use urllib2 to combine with the BeautifulSoup library. Then, we need to deal with HTML tags to find all the links within the page’s <a> tags and the right table. After that, iterate through each row (tr) and then assign each element of tr (td) to a variable and append it to a list.
+
+Octoparse is a web crawler tool that can be used to not only extract the images but also text or other data.
+•	When using Octoparse to scrape images, you can add pagination to the crawler so that it can scrape down image URLs automatically over a multitude of pages.
+•	Octoparse offers templates for users to scrape from a series of websites
+•	For downloading the images, octoparse yet doesn’t support downloading , instead we need to use a separate desktop software.
